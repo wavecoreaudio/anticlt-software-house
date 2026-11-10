@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vagas de diária · ANTI CLT</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/css/estilo.css">
+</head>
+<body>
+  <header class="topo" id="topo"></header>
+
+  <main>
+    <section class="cabeca-pagina">
+      <div class="container">
+        <div class="linha-flex entre" style="align-items:flex-end">
+          <div>
+            <span class="rotulo">Publicadas por empresas e famílias</span>
+            <h1>Vagas de diária</h1>
+            <p class="subtitulo" style="margin:0">Serviços com data e horário marcados. Prestadores cadastrados podem demonstrar interesse.</p>
+          </div>
+          <a class="botao botao--claro" id="botao-publicar" href="/painel">
+            <i data-icone="mais"></i> Publicar vaga
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="container" style="padding-bottom:110px">
+      <div class="barra-filtros"><nav class="abas" id="abas" aria-label="Categorias"></nav></div>
+      <p class="resultado-info" id="info"></p>
+      <div class="lista-vagas" id="lista"><p class="carregando">Carregando vagas…</p></div>
+    </section>
+  </main>
+
+  <footer class="rodape" id="rodape"></footer>
+  <script src="/js/icones.js"></script>
+  <script src="/js/comum.js"></script>
+  <script src="/js/vagas.js"></script>
+</body>
+</html>

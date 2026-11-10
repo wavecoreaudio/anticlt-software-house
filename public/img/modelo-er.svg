@@ -1,0 +1,316 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1270 946" width="1270" height="946" font-family="Inter, Segoe UI, Arial, sans-serif" xmlns:c2pa="http://c2pa.org/manifest">
+  <rect width="100%" height="100%" fill="#fff"/>
+  <text x="30" y="36" font-size="18" font-weight="600" fill="#0a0a0b">ANTI CLT Web System — modelo do banco (SQLite3)</text>
+  <text x="1240" y="36" font-size="12" fill="#71717a" text-anchor="end">PK = chave primária · FK = chave estrangeira · seta aponta para a tabela referenciada</text>
+  <path d="M280,326.5 C320,326.5 320,87 280,87" fill="none" stroke="#9a9aa2" stroke-width="1.3"/><circle cx="280" cy="326.5" r="3" fill="#0a0a0b"/><path d="M280,82 l-7,5 l7,5" fill="none" stroke="#0a0a0b" stroke-width="1.3"/><path d="M280,601.5 C315,601.5 315,87 350,87" fill="none" stroke="#9a9aa2" stroke-width="1.3"/><circle cx="280" cy="601.5" r="3" fill="#0a0a0b"/><path d="M350,82 l7,5 l-7,5" fill="none" stroke="#0a0a0b" stroke-width="1.3"/><path d="M280,580.5 C320,580.5 320,87 280,87" fill="none" stroke="#9a9aa2" stroke-width="1.3"/><circle cx="280" cy="580.5" r="3" fill="#0a0a0b"/><path d="M280,82 l-7,5 l7,5" fill="none" stroke="#0a0a0b" stroke-width="1.3"/><path d="M350,156.5 C315,156.5 315,87 280,87" fill="none" stroke="#9a9aa2" stroke-width="1.3"/><circle cx="350" cy="156.5" r="3" fill="#0a0a0b"/><path d="M280,82 l-7,5 l7,5" fill="none" stroke="#0a0a0b" stroke-width="1.3"/><path d="M600,135.5 C635,135.5 635,87 670,87" fill="none" stroke="#9a9aa2" stroke-width="1.3"/><circle cx="600" cy="135.5" r="3" fill="#0a0a0b"/><path d="M670,82 l7,5 l-7,5" fill="none" stroke="#0a0a0b" stroke-width="1.3"/><path d="M600,473.5 C640,473.5 640,87 600,87" fill="none" stroke="#9a9aa2" stroke-width="1.3"/><circle cx="600" cy="473.5" r="3" fill="#0a0a0b"/><path d="M600,82 l-7,5 l7,5" fill="none" stroke="#0a0a0b" stroke-width="1.3"/><path d="M600,685.5 C635,685.5 635,87 670,87" fill="none" stroke="#9a9aa2" stroke-width="1.3"/><circle cx="600" cy="685.5" r="3" fill="#0a0a0b"/><path d="M670,82 l7,5 l-7,5" fill="none" stroke="#0a0a0b" stroke-width="1.3"/><path d="M600,664.5 C640,664.5 640,87 600,87" fill="none" stroke="#9a9aa2" stroke-width="1.3"/><circle cx="600" cy="664.5" r="3" fill="#0a0a0b"/><path d="M600,82 l-7,5 l7,5" fill="none" stroke="#0a0a0b" stroke-width="1.3"/><path d="M920,410.5 C960,410.5 960,87 920,87" fill="none" stroke="#9a9aa2" stroke-width="1.3"/><circle cx="920" cy="410.5" r="3" fill="#0a0a0b"/><path d="M920,82 l-7,5 l7,5" fill="none" stroke="#0a0a0b" stroke-width="1.3"/><path d="M670,559.5 C635,559.5 635,87 600,87" fill="none" stroke="#9a9aa2" stroke-width="1.3"/><circle cx="670" cy="559.5" r="3" fill="#0a0a0b"/><path d="M600,82 l-7,5 l7,5" fill="none" stroke="#0a0a0b" stroke-width="1.3"/><path d="M920,538.5 C960,538.5 960,87 920,87" fill="none" stroke="#9a9aa2" stroke-width="1.3"/><circle cx="920" cy="538.5" r="3" fill="#0a0a0b"/><path d="M920,82 l-7,5 l7,5" fill="none" stroke="#0a0a0b" stroke-width="1.3"/><path d="M920,708.5 C960,708.5 960,87 920,87" fill="none" stroke="#9a9aa2" stroke-width="1.3"/><circle cx="920" cy="708.5" r="3" fill="#0a0a0b"/><path d="M920,82 l-7,5 l7,5" fill="none" stroke="#0a0a0b" stroke-width="1.3"/><path d="M990,156.5 C635,156.5 635,87 280,87" fill="none" stroke="#9a9aa2" stroke-width="1.3"/><circle cx="990" cy="156.5" r="3" fill="#0a0a0b"/><path d="M280,82 l-7,5 l7,5" fill="none" stroke="#0a0a0b" stroke-width="1.3"/><path d="M990,135.5 C955,135.5 955,87 920,87" fill="none" stroke="#9a9aa2" stroke-width="1.3"/><circle cx="990" cy="135.5" r="3" fill="#0a0a0b"/><path d="M920,82 l-7,5 l7,5" fill="none" stroke="#0a0a0b" stroke-width="1.3"/><path d="M990,473.5 C795,473.5 795,87 600,87" fill="none" stroke="#9a9aa2" stroke-width="1.3"/><circle cx="990" cy="473.5" r="3" fill="#0a0a0b"/><path d="M600,82 l-7,5 l7,5" fill="none" stroke="#0a0a0b" stroke-width="1.3"/><path d="M1240,452.5 C1280,452.5 1280,87 1240,87" fill="none" stroke="#9a9aa2" stroke-width="1.3"/><circle cx="1240" cy="452.5" r="3" fill="#0a0a0b"/><path d="M1240,82 l-7,5 l7,5" fill="none" stroke="#0a0a0b" stroke-width="1.3"/><path d="M990,664.5 C795,664.5 795,87 600,87" fill="none" stroke="#9a9aa2" stroke-width="1.3"/><circle cx="990" cy="664.5" r="3" fill="#0a0a0b"/><path d="M600,82 l-7,5 l7,5" fill="none" stroke="#0a0a0b" stroke-width="1.3"/><path d="M990,643.5 C955,643.5 955,87 920,87" fill="none" stroke="#9a9aa2" stroke-width="1.3"/><circle cx="990" cy="643.5" r="3" fill="#0a0a0b"/><path d="M920,82 l-7,5 l7,5" fill="none" stroke="#0a0a0b" stroke-width="1.3"/><path d="M990,834.5 C955,834.5 955,87 920,87" fill="none" stroke="#9a9aa2" stroke-width="1.3"/><circle cx="990" cy="834.5" r="3" fill="#0a0a0b"/><path d="M920,82 l-7,5 l7,5" fill="none" stroke="#0a0a0b" stroke-width="1.3"/><path d="M1240,813.5 C1280,813.5 1280,595 1240,595" fill="none" stroke="#9a9aa2" stroke-width="1.3"/><circle cx="1240" cy="813.5" r="3" fill="#0a0a0b"/><path d="M1240,590 l-7,5 l7,5" fill="none" stroke="#0a0a0b" stroke-width="1.3"/>
+  <g>
+    <rect x="30" y="70" width="250" height="147" rx="10" fill="#fff" stroke="#0a0a0b" stroke-width="1.3"/>
+    <path d="M30,104 V80 Q30,70 40,70 H270 Q280,70 280,80 V104 Z" fill="#0a0a0b"/>
+    <text x="44" y="92" fill="#fff" font-size="14" font-weight="600">categorias</text>
+    <text x="44" y="119" font-size="12" fill="#0a0a0b" font-weight="600">id</text>
+    <text x="230" y="119" font-size="10.5" fill="#71717a" text-anchor="end">integer</text>
+    <text x="266" y="119" font-size="10" font-weight="700" fill="#0a0a0b" text-anchor="end">PK</text>
+    <text x="44" y="140" font-size="12" fill="#0a0a0b" font-weight="400">slug</text>
+    <text x="230" y="140" font-size="10.5" fill="#71717a" text-anchor="end">text</text>
+    
+    <text x="44" y="161" font-size="12" fill="#0a0a0b" font-weight="400">nome</text>
+    <text x="230" y="161" font-size="10.5" fill="#71717a" text-anchor="end">text</text>
+    
+    <text x="44" y="182" font-size="12" fill="#0a0a0b" font-weight="400">descricao</text>
+    <text x="230" y="182" font-size="10.5" fill="#71717a" text-anchor="end">text</text>
+    
+    <text x="44" y="203" font-size="12" fill="#0a0a0b" font-weight="400">icone</text>
+    <text x="230" y="203" font-size="10.5" fill="#71717a" text-anchor="end">text</text>
+    </g><g>
+    <rect x="30" y="261" width="250" height="210" rx="10" fill="#fff" stroke="#0a0a0b" stroke-width="1.3"/>
+    <path d="M30,295 V271 Q30,261 40,261 H270 Q280,261 280,271 V295 Z" fill="#0a0a0b"/>
+    <text x="44" y="283" fill="#fff" font-size="14" font-weight="600">campos_categoria</text>
+    <text x="44" y="310" font-size="12" fill="#0a0a0b" font-weight="600">id</text>
+    <text x="230" y="310" font-size="10.5" fill="#71717a" text-anchor="end">integer</text>
+    <text x="266" y="310" font-size="10" font-weight="700" fill="#0a0a0b" text-anchor="end">PK</text>
+    <text x="44" y="331" font-size="12" fill="#0a0a0b" font-weight="400">categoria_id</text>
+    <text x="230" y="331" font-size="10.5" fill="#71717a" text-anchor="end">integer</text>
+    <text x="266" y="331" font-size="10" font-weight="700" fill="#71717a" text-anchor="end">FK</text>
+    <text x="44" y="352" font-size="12" fill="#0a0a0b" font-weight="400">chave</text>
+    <text x="230" y="352" font-size="10.5" fill="#71717a" text-anchor="end">text</text>
+    
+    <text x="44" y="373" font-size="12" fill="#0a0a0b" font-weight="400">rotulo</text>
+    <text x="230" y="373" font-size="10.5" fill="#71717a" text-anchor="end">text</text>
+    
+    <text x="44" y="394" font-size="12" fill="#0a0a0b" font-weight="400">tipo</text>
+    <text x="230" y="394" font-size="10.5" fill="#71717a" text-anchor="end">text</text>
+    
+    <text x="44" y="415" font-size="12" fill="#0a0a0b" font-weight="400">opcoes</text>
+    <text x="230" y="415" font-size="10.5" fill="#71717a" text-anchor="end">text</text>
+    
+    <text x="44" y="436" font-size="12" fill="#0a0a0b" font-weight="400">obrigatorio</text>
+    <text x="230" y="436" font-size="10.5" fill="#71717a" text-anchor="end">integer</text>
+    
+    <text x="44" y="457" font-size="12" fill="#0a0a0b" font-weight="400">ordem</text>
+    <text x="230" y="457" font-size="10.5" fill="#71717a" text-anchor="end">integer</text>
+    </g><g>
+    <rect x="30" y="515" width="250" height="147" rx="10" fill="#fff" stroke="#0a0a0b" stroke-width="1.3"/>
+    <path d="M30,549 V525 Q30,515 40,515 H270 Q280,515 280,525 V549 Z" fill="#0a0a0b"/>
+    <text x="44" y="537" fill="#fff" font-size="14" font-weight="600">acessos</text>
+    <text x="44" y="564" font-size="12" fill="#0a0a0b" font-weight="600">id</text>
+    <text x="230" y="564" font-size="10.5" fill="#71717a" text-anchor="end">integer</text>
+    <text x="266" y="564" font-size="10" font-weight="700" fill="#0a0a0b" text-anchor="end">PK</text>
+    <text x="44" y="585" font-size="12" fill="#0a0a0b" font-weight="400">categoria_id</text>
+    <text x="230" y="585" font-size="10.5" fill="#71717a" text-anchor="end">integer</text>
+    <text x="266" y="585" font-size="10" font-weight="700" fill="#71717a" text-anchor="end">FK</text>
+    <text x="44" y="606" font-size="12" fill="#0a0a0b" font-weight="400">prestador_id</text>
+    <text x="230" y="606" font-size="10.5" fill="#71717a" text-anchor="end">integer</text>
+    <text x="266" y="606" font-size="10" font-weight="700" fill="#71717a" text-anchor="end">FK</text>
+    <text x="44" y="627" font-size="12" fill="#0a0a0b" font-weight="400">tipo</text>
+    <text x="230" y="627" font-size="10.5" fill="#71717a" text-anchor="end">text</text>
+    
+    <text x="44" y="648" font-size="12" fill="#0a0a0b" font-weight="400">criado_em</text>
+    <text x="230" y="648" font-size="10.5" fill="#71717a" text-anchor="end">text</text>
+    </g><g>
+    <rect x="350" y="70" width="250" height="294" rx="10" fill="#fff" stroke="#0a0a0b" stroke-width="1.3"/>
+    <path d="M350,104 V80 Q350,70 360,70 H590 Q600,70 600,80 V104 Z" fill="#0a0a0b"/>
+    <text x="364" y="92" fill="#fff" font-size="14" font-weight="600">prestadores</text>
+    <text x="364" y="119" font-size="12" fill="#0a0a0b" font-weight="600">id</text>
+    <text x="550" y="119" font-size="10.5" fill="#71717a" text-anchor="end">integer</text>
+    <text x="586" y="119" font-size="10" font-weight="700" fill="#0a0a0b" text-anchor="end">PK</text>
+    <text x="364" y="140" font-size="12" fill="#0a0a0b" font-weight="400">usuario_id</text>
+    <text x="550" y="140" font-size="10.5" fill="#71717a" text-anchor="end">integer</text>
+    <text x="586" y="140" font-size="10" font-weight="700" fill="#71717a" text-anchor="end">FK</text>
+    <text x="364" y="161" font-size="12" fill="#0a0a0b" font-weight="400">categoria_id</text>
+    <text x="550" y="161" font-size="10.5" fill="#71717a" text-anchor="end">integer</text>
+    <text x="586" y="161" font-size="10" font-weight="700" fill="#71717a" text-anchor="end">FK</text>
+    <text x="364" y="182" font-size="12" fill="#0a0a0b" font-weight="400">titulo</text>
+    <text x="550" y="182" font-size="10.5" fill="#71717a" text-anchor="end">text</text>
+    
+    <text x="364" y="203" font-size="12" fill="#0a0a0b" font-weight="400">bio</text>
+    <text x="550" y="203" font-size="10.5" fill="#71717a" text-anchor="end">text</text>
+    
+    <text x="364" y="224" font-size="12" fill="#0a0a0b" font-weight="400">bairro</text>
+    <text x="550" y="224" font-size="10.5" fill="#71717a" text-anchor="end">text</text>
+    
+    <text x="364" y="245" font-size="12" fill="#0a0a0b" font-weight="400">cidade</text>
+    <text x="550" y="245" font-size="10.5" fill="#71717a" text-anchor="end">text</text>
+    
+    <text x="364" y="266" font-size="12" fill="#0a0a0b" font-weight="400">whatsapp</text>
+    <text x="550" y="266" font-size="10.5" fill="#71717a" text-anchor="end">text</text>
+    
+    <text x="364" y="287" font-size="12" fill="#0a0a0b" font-weight="400">instagram</text>
+    <text x="550" y="287" font-size="10.5" fill="#71717a" text-anchor="end">text</text>
+    
+    <text x="364" y="308" font-size="12" fill="#0a0a0b" font-weight="400">anos_experiencia</text>
+    <text x="550" y="308" font-size="10.5" fill="#71717a" text-anchor="end">integer</text>
+    
+    <text x="364" y="329" font-size="12" fill="#0a0a0b" font-weight="400">dados_especificos</text>
+    <text x="550" y="329" font-size="10.5" fill="#71717a" text-anchor="end">text</text>
+    
+    <text x="364" y="350" font-size="12" fill="#0a0a0b" font-weight="400">criado_em</text>
+    <text x="550" y="350" font-size="10.5" fill="#71717a" text-anchor="end">text</text>
+    </g><g>
+    <rect x="350" y="408" width="250" height="147" rx="10" fill="#fff" stroke="#0a0a0b" stroke-width="1.3"/>
+    <path d="M350,442 V418 Q350,408 360,408 H590 Q600,408 600,418 V442 Z" fill="#0a0a0b"/>
+    <text x="364" y="430" fill="#fff" font-size="14" font-weight="600">fotos</text>
+    <text x="364" y="457" font-size="12" fill="#0a0a0b" font-weight="600">id</text>
+    <text x="550" y="457" font-size="10.5" fill="#71717a" text-anchor="end">integer</text>
+    <text x="586" y="457" font-size="10" font-weight="700" fill="#0a0a0b" text-anchor="end">PK</text>
+    <text x="364" y="478" font-size="12" fill="#0a0a0b" font-weight="400">prestador_id</text>
+    <text x="550" y="478" font-size="10.5" fill="#71717a" text-anchor="end">integer</text>
+    <text x="586" y="478" font-size="10" font-weight="700" fill="#71717a" text-anchor="end">FK</text>
+    <text x="364" y="499" font-size="12" fill="#0a0a0b" font-weight="400">caminho</text>
+    <text x="550" y="499" font-size="10.5" fill="#71717a" text-anchor="end">text</text>
+    
+    <text x="364" y="520" font-size="12" fill="#0a0a0b" font-weight="400">legenda</text>
+    <text x="550" y="520" font-size="10.5" fill="#71717a" text-anchor="end">text</text>
+    
+    <text x="364" y="541" font-size="12" fill="#0a0a0b" font-weight="400">ordem</text>
+    <text x="550" y="541" font-size="10.5" fill="#71717a" text-anchor="end">integer</text>
+    </g><g>
+    <rect x="350" y="599" width="250" height="168" rx="10" fill="#fff" stroke="#0a0a0b" stroke-width="1.3"/>
+    <path d="M350,633 V609 Q350,599 360,599 H590 Q600,599 600,609 V633 Z" fill="#0a0a0b"/>
+    <text x="364" y="621" fill="#fff" font-size="14" font-weight="600">avaliacoes</text>
+    <text x="364" y="648" font-size="12" fill="#0a0a0b" font-weight="600">id</text>
+    <text x="550" y="648" font-size="10.5" fill="#71717a" text-anchor="end">integer</text>
+    <text x="586" y="648" font-size="10" font-weight="700" fill="#0a0a0b" text-anchor="end">PK</text>
+    <text x="364" y="669" font-size="12" fill="#0a0a0b" font-weight="400">prestador_id</text>
+    <text x="550" y="669" font-size="10.5" fill="#71717a" text-anchor="end">integer</text>
+    <text x="586" y="669" font-size="10" font-weight="700" fill="#71717a" text-anchor="end">FK</text>
+    <text x="364" y="690" font-size="12" fill="#0a0a0b" font-weight="400">cliente_id</text>
+    <text x="550" y="690" font-size="10.5" fill="#71717a" text-anchor="end">integer</text>
+    <text x="586" y="690" font-size="10" font-weight="700" fill="#71717a" text-anchor="end">FK</text>
+    <text x="364" y="711" font-size="12" fill="#0a0a0b" font-weight="400">nota</text>
+    <text x="550" y="711" font-size="10.5" fill="#71717a" text-anchor="end">integer</text>
+    
+    <text x="364" y="732" font-size="12" fill="#0a0a0b" font-weight="400">comentario</text>
+    <text x="550" y="732" font-size="10.5" fill="#71717a" text-anchor="end">text</text>
+    
+    <text x="364" y="753" font-size="12" fill="#0a0a0b" font-weight="400">criado_em</text>
+    <text x="550" y="753" font-size="10.5" fill="#71717a" text-anchor="end">text</text>
+    </g><g>
+    <rect x="670" y="70" width="250" height="231" rx="10" fill="#fff" stroke="#0a0a0b" stroke-width="1.3"/>
+    <path d="M670,104 V80 Q670,70 680,70 H910 Q920,70 920,80 V104 Z" fill="#0a0a0b"/>
+    <text x="684" y="92" fill="#fff" font-size="14" font-weight="600">usuarios</text>
+    <text x="684" y="119" font-size="12" fill="#0a0a0b" font-weight="600">id</text>
+    <text x="870" y="119" font-size="10.5" fill="#71717a" text-anchor="end">integer</text>
+    <text x="906" y="119" font-size="10" font-weight="700" fill="#0a0a0b" text-anchor="end">PK</text>
+    <text x="684" y="140" font-size="12" fill="#0a0a0b" font-weight="400">nome</text>
+    <text x="870" y="140" font-size="10.5" fill="#71717a" text-anchor="end">text</text>
+    
+    <text x="684" y="161" font-size="12" fill="#0a0a0b" font-weight="400">email</text>
+    <text x="870" y="161" font-size="10.5" fill="#71717a" text-anchor="end">text</text>
+    
+    <text x="684" y="182" font-size="12" fill="#0a0a0b" font-weight="400">senha_hash</text>
+    <text x="870" y="182" font-size="10.5" fill="#71717a" text-anchor="end">text</text>
+    
+    <text x="684" y="203" font-size="12" fill="#0a0a0b" font-weight="400">tipo</text>
+    <text x="870" y="203" font-size="10.5" fill="#71717a" text-anchor="end">text</text>
+    
+    <text x="684" y="224" font-size="12" fill="#0a0a0b" font-weight="400">telefone</text>
+    <text x="870" y="224" font-size="10.5" fill="#71717a" text-anchor="end">text</text>
+    
+    <text x="684" y="245" font-size="12" fill="#0a0a0b" font-weight="400">ativo</text>
+    <text x="870" y="245" font-size="10.5" fill="#71717a" text-anchor="end">integer</text>
+    
+    <text x="684" y="266" font-size="12" fill="#0a0a0b" font-weight="400">aceitou_termos_em</text>
+    <text x="870" y="266" font-size="10.5" fill="#71717a" text-anchor="end">text</text>
+    
+    <text x="684" y="287" font-size="12" fill="#0a0a0b" font-weight="400">criado_em</text>
+    <text x="870" y="287" font-size="10.5" fill="#71717a" text-anchor="end">text</text>
+    </g><g>
+    <rect x="670" y="345" width="250" height="105" rx="10" fill="#fff" stroke="#0a0a0b" stroke-width="1.3"/>
+    <path d="M670,379 V355 Q670,345 680,345 H910 Q920,345 920,355 V379 Z" fill="#0a0a0b"/>
+    <text x="684" y="367" fill="#fff" font-size="14" font-weight="600">sessoes</text>
+    <text x="684" y="394" font-size="12" fill="#0a0a0b" font-weight="600">token</text>
+    <text x="870" y="394" font-size="10.5" fill="#71717a" text-anchor="end">text</text>
+    <text x="906" y="394" font-size="10" font-weight="700" fill="#0a0a0b" text-anchor="end">PK</text>
+    <text x="684" y="415" font-size="12" fill="#0a0a0b" font-weight="400">usuario_id</text>
+    <text x="870" y="415" font-size="10.5" fill="#71717a" text-anchor="end">integer</text>
+    <text x="906" y="415" font-size="10" font-weight="700" fill="#71717a" text-anchor="end">FK</text>
+    <text x="684" y="436" font-size="12" fill="#0a0a0b" font-weight="400">criado_em</text>
+    <text x="870" y="436" font-size="10.5" fill="#71717a" text-anchor="end">text</text>
+    </g><g>
+    <rect x="670" y="494" width="250" height="105" rx="10" fill="#fff" stroke="#0a0a0b" stroke-width="1.3"/>
+    <path d="M670,528 V504 Q670,494 680,494 H910 Q920,494 920,504 V528 Z" fill="#0a0a0b"/>
+    <text x="684" y="516" fill="#fff" font-size="14" font-weight="600">favoritos</text>
+    <text x="684" y="543" font-size="12" fill="#0a0a0b" font-weight="600">cliente_id</text>
+    <text x="870" y="543" font-size="10.5" fill="#71717a" text-anchor="end">integer</text>
+    <text x="906" y="543" font-size="10" font-weight="700" fill="#0a0a0b" text-anchor="end">PK</text>
+    <text x="684" y="564" font-size="12" fill="#0a0a0b" font-weight="600">prestador_id</text>
+    <text x="870" y="564" font-size="10.5" fill="#71717a" text-anchor="end">integer</text>
+    <text x="906" y="564" font-size="10" font-weight="700" fill="#0a0a0b" text-anchor="end">PK</text>
+    <text x="684" y="585" font-size="12" fill="#0a0a0b" font-weight="400">criado_em</text>
+    <text x="870" y="585" font-size="10.5" fill="#71717a" text-anchor="end">text</text>
+    </g><g>
+    <rect x="670" y="643" width="250" height="189" rx="10" fill="#fff" stroke="#0a0a0b" stroke-width="1.3"/>
+    <path d="M670,677 V653 Q670,643 680,643 H910 Q920,643 920,653 V677 Z" fill="#0a0a0b"/>
+    <text x="684" y="665" fill="#fff" font-size="14" font-weight="600">auditoria</text>
+    <text x="684" y="692" font-size="12" fill="#0a0a0b" font-weight="600">id</text>
+    <text x="870" y="692" font-size="10.5" fill="#71717a" text-anchor="end">integer</text>
+    <text x="906" y="692" font-size="10" font-weight="700" fill="#0a0a0b" text-anchor="end">PK</text>
+    <text x="684" y="713" font-size="12" fill="#0a0a0b" font-weight="400">usuario_id</text>
+    <text x="870" y="713" font-size="10.5" fill="#71717a" text-anchor="end">integer</text>
+    <text x="906" y="713" font-size="10" font-weight="700" fill="#71717a" text-anchor="end">FK</text>
+    <text x="684" y="734" font-size="12" fill="#0a0a0b" font-weight="400">usuario</text>
+    <text x="870" y="734" font-size="10.5" fill="#71717a" text-anchor="end">text</text>
+    
+    <text x="684" y="755" font-size="12" fill="#0a0a0b" font-weight="400">acao</text>
+    <text x="870" y="755" font-size="10.5" fill="#71717a" text-anchor="end">text</text>
+    
+    <text x="684" y="776" font-size="12" fill="#0a0a0b" font-weight="400">detalhe</text>
+    <text x="870" y="776" font-size="10.5" fill="#71717a" text-anchor="end">text</text>
+    
+    <text x="684" y="797" font-size="12" fill="#0a0a0b" font-weight="400">ip</text>
+    <text x="870" y="797" font-size="10.5" fill="#71717a" text-anchor="end">text</text>
+    
+    <text x="684" y="818" font-size="12" fill="#0a0a0b" font-weight="400">criado_em</text>
+    <text x="870" y="818" font-size="10.5" fill="#71717a" text-anchor="end">text</text>
+    </g><g>
+    <rect x="990" y="70" width="250" height="273" rx="10" fill="#fff" stroke="#0a0a0b" stroke-width="1.3"/>
+    <path d="M990,104 V80 Q990,70 1000,70 H1230 Q1240,70 1240,80 V104 Z" fill="#0a0a0b"/>
+    <text x="1004" y="92" fill="#fff" font-size="14" font-weight="600">vagas</text>
+    <text x="1004" y="119" font-size="12" fill="#0a0a0b" font-weight="600">id</text>
+    <text x="1190" y="119" font-size="10.5" fill="#71717a" text-anchor="end">integer</text>
+    <text x="1226" y="119" font-size="10" font-weight="700" fill="#0a0a0b" text-anchor="end">PK</text>
+    <text x="1004" y="140" font-size="12" fill="#0a0a0b" font-weight="400">contratante_id</text>
+    <text x="1190" y="140" font-size="10.5" fill="#71717a" text-anchor="end">integer</text>
+    <text x="1226" y="140" font-size="10" font-weight="700" fill="#71717a" text-anchor="end">FK</text>
+    <text x="1004" y="161" font-size="12" fill="#0a0a0b" font-weight="400">categoria_id</text>
+    <text x="1190" y="161" font-size="10.5" fill="#71717a" text-anchor="end">integer</text>
+    <text x="1226" y="161" font-size="10" font-weight="700" fill="#71717a" text-anchor="end">FK</text>
+    <text x="1004" y="182" font-size="12" fill="#0a0a0b" font-weight="400">titulo</text>
+    <text x="1190" y="182" font-size="10.5" fill="#71717a" text-anchor="end">text</text>
+    
+    <text x="1004" y="203" font-size="12" fill="#0a0a0b" font-weight="400">descricao</text>
+    <text x="1190" y="203" font-size="10.5" fill="#71717a" text-anchor="end">text</text>
+    
+    <text x="1004" y="224" font-size="12" fill="#0a0a0b" font-weight="400">bairro</text>
+    <text x="1190" y="224" font-size="10.5" fill="#71717a" text-anchor="end">text</text>
+    
+    <text x="1004" y="245" font-size="12" fill="#0a0a0b" font-weight="400">cidade</text>
+    <text x="1190" y="245" font-size="10.5" fill="#71717a" text-anchor="end">text</text>
+    
+    <text x="1004" y="266" font-size="12" fill="#0a0a0b" font-weight="400">data_servico</text>
+    <text x="1190" y="266" font-size="10.5" fill="#71717a" text-anchor="end">text</text>
+    
+    <text x="1004" y="287" font-size="12" fill="#0a0a0b" font-weight="400">horario</text>
+    <text x="1190" y="287" font-size="10.5" fill="#71717a" text-anchor="end">text</text>
+    
+    <text x="1004" y="308" font-size="12" fill="#0a0a0b" font-weight="400">status</text>
+    <text x="1190" y="308" font-size="10.5" fill="#71717a" text-anchor="end">text</text>
+    
+    <text x="1004" y="329" font-size="12" fill="#0a0a0b" font-weight="400">criado_em</text>
+    <text x="1190" y="329" font-size="10.5" fill="#71717a" text-anchor="end">text</text>
+    </g><g>
+    <rect x="990" y="387" width="250" height="147" rx="10" fill="#fff" stroke="#0a0a0b" stroke-width="1.3"/>
+    <path d="M990,421 V397 Q990,387 1000,387 H1230 Q1240,387 1240,397 V421 Z" fill="#0a0a0b"/>
+    <text x="1004" y="409" fill="#fff" font-size="14" font-weight="600">interesses</text>
+    <text x="1004" y="436" font-size="12" fill="#0a0a0b" font-weight="600">id</text>
+    <text x="1190" y="436" font-size="10.5" fill="#71717a" text-anchor="end">integer</text>
+    <text x="1226" y="436" font-size="10" font-weight="700" fill="#0a0a0b" text-anchor="end">PK</text>
+    <text x="1004" y="457" font-size="12" fill="#0a0a0b" font-weight="400">vaga_id</text>
+    <text x="1190" y="457" font-size="10.5" fill="#71717a" text-anchor="end">integer</text>
+    <text x="1226" y="457" font-size="10" font-weight="700" fill="#71717a" text-anchor="end">FK</text>
+    <text x="1004" y="478" font-size="12" fill="#0a0a0b" font-weight="400">prestador_id</text>
+    <text x="1190" y="478" font-size="10.5" fill="#71717a" text-anchor="end">integer</text>
+    <text x="1226" y="478" font-size="10" font-weight="700" fill="#71717a" text-anchor="end">FK</text>
+    <text x="1004" y="499" font-size="12" fill="#0a0a0b" font-weight="400">mensagem</text>
+    <text x="1190" y="499" font-size="10.5" fill="#71717a" text-anchor="end">text</text>
+    
+    <text x="1004" y="520" font-size="12" fill="#0a0a0b" font-weight="400">criado_em</text>
+    <text x="1190" y="520" font-size="10.5" fill="#71717a" text-anchor="end">text</text>
+    </g><g>
+    <rect x="990" y="578" width="250" height="126" rx="10" fill="#fff" stroke="#0a0a0b" stroke-width="1.3"/>
+    <path d="M990,612 V588 Q990,578 1000,578 H1230 Q1240,578 1240,588 V612 Z" fill="#0a0a0b"/>
+    <text x="1004" y="600" fill="#fff" font-size="14" font-weight="600">conversas</text>
+    <text x="1004" y="627" font-size="12" fill="#0a0a0b" font-weight="600">id</text>
+    <text x="1190" y="627" font-size="10.5" fill="#71717a" text-anchor="end">integer</text>
+    <text x="1226" y="627" font-size="10" font-weight="700" fill="#0a0a0b" text-anchor="end">PK</text>
+    <text x="1004" y="648" font-size="12" fill="#0a0a0b" font-weight="400">cliente_id</text>
+    <text x="1190" y="648" font-size="10.5" fill="#71717a" text-anchor="end">integer</text>
+    <text x="1226" y="648" font-size="10" font-weight="700" fill="#71717a" text-anchor="end">FK</text>
+    <text x="1004" y="669" font-size="12" fill="#0a0a0b" font-weight="400">prestador_id</text>
+    <text x="1190" y="669" font-size="10.5" fill="#71717a" text-anchor="end">integer</text>
+    <text x="1226" y="669" font-size="10" font-weight="700" fill="#71717a" text-anchor="end">FK</text>
+    <text x="1004" y="690" font-size="12" fill="#0a0a0b" font-weight="400">criado_em</text>
+    <text x="1190" y="690" font-size="10.5" fill="#71717a" text-anchor="end">text</text>
+    </g><g>
+    <rect x="990" y="748" width="250" height="168" rx="10" fill="#fff" stroke="#0a0a0b" stroke-width="1.3"/>
+    <path d="M990,782 V758 Q990,748 1000,748 H1230 Q1240,748 1240,758 V782 Z" fill="#0a0a0b"/>
+    <text x="1004" y="770" fill="#fff" font-size="14" font-weight="600">mensagens</text>
+    <text x="1004" y="797" font-size="12" fill="#0a0a0b" font-weight="600">id</text>
+    <text x="1190" y="797" font-size="10.5" fill="#71717a" text-anchor="end">integer</text>
+    <text x="1226" y="797" font-size="10" font-weight="700" fill="#0a0a0b" text-anchor="end">PK</text>
+    <text x="1004" y="818" font-size="12" fill="#0a0a0b" font-weight="400">conversa_id</text>
+    <text x="1190" y="818" font-size="10.5" fill="#71717a" text-anchor="end">integer</text>
+    <text x="1226" y="818" font-size="10" font-weight="700" fill="#71717a" text-anchor="end">FK</text>
+    <text x="1004" y="839" font-size="12" fill="#0a0a0b" font-weight="400">autor_id</text>
+    <text x="1190" y="839" font-size="10.5" fill="#71717a" text-anchor="end">integer</text>
+    <text x="1226" y="839" font-size="10" font-weight="700" fill="#71717a" text-anchor="end">FK</text>
+    <text x="1004" y="860" font-size="12" fill="#0a0a0b" font-weight="400">texto</text>
+    <text x="1190" y="860" font-size="10.5" fill="#71717a" text-anchor="end">text</text>
+    
+    <text x="1004" y="881" font-size="12" fill="#0a0a0b" font-weight="400">lida</text>
+    <text x="1190" y="881" font-size="10.5" fill="#71717a" text-anchor="end">integer</text>
+    
+    <text x="1004" y="902" font-size="12" fill="#0a0a0b" font-weight="400">criado_em</text>
+    <text x="1190" y="902" font-size="10.5" fill="#71717a" text-anchor="end">text</text>
+    </g>
+<metadata><c2pa:manifest>AAAWgmp1bWIAAAAeanVtZGMycGEAEQAQgAAAqgA4m3EDYzJwYQAAABZcanVtYgAAAEdqdW1kYzJtYQARABCAAACqADibcQN1cm46YzJwYTowNmQ0NGM4Ny0xMDYyLTQ0NDUtOGExNi01ZWZhOTk1NTYwNDIAAAADl2p1bWIAAAApanVtZGMyYXMAEQAQgAAAqgA4m3EDYzJwYS5hc3NlcnRpb25zAAAAALxqdW1iAAAARGp1bWRjYm9yABEAEIAAAKoAOJtxE2MycGEuaW5ncmVkaWVudC52MwAAAAAYYzJzaLGeR08zOoftfB6MxVDLFfwAAABwY2JvcqNpZGM6Zm9ybWF0bWltYWdlL3N2Zyt4bWxqaW5zdGFuY2VJRHgseG1wOmlpZDo0ZGQ4NjBlZS02MTE3LTRlOTEtYTgzZS04NzhiNDYxOGYxYjlscmVsYXRpb25zaGlwaHBhcmVudE9mAAAB4mp1bWIAAABBanVtZGNib3IAEQAQgAAAqgA4m3ETYzJwYS5hY3Rpb25zLnYyAAAAABhjMnNouN4ScJrx/Eyy5hSgi4LlNQAAAZljYm9yomdhY3Rpb25zgqJmYWN0aW9ua2MycGEub3BlbmVkanBhcmFtZXRlcnOha2luZ3JlZGllbnRzgaJjdXJseC1zZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmluZ3JlZGllbnQudjNkaGFzaFggVnsOylfgsualoRUNXJZH1HDxJ9VJUhpwSgHD563VbwKkZmFjdGlvbngdY29tLmFudGhyb3BpYy5jbGF1ZGUucHJvdmlkZWRqcGFyYW1ldGVyc6F4H2NvbS5hbnRocm9waWMub3JpZ2luLWNvbmZpZGVuY2VndW5rbm93bmtkZXNjcmlwdGlvbnhmQ2xhdWRlIHByb3ZpZGVkIHRoaXMgZmlsZSBhdCB0aGUgcmVxdWVzdCBvZiBhIHVzZXIgYW5kIG1heSBoYXZlIGNyZWF0ZWQgb3IgbW9kaWZpZWQgdGhlIGZpbGUgY29udGVudHMubXNvZnR3YXJlQWdlbnShZG5hbWVmQ2xhdWRlcmFsbEFjdGlvbnNJbmNsdWRlZPUAAADIanVtYgAAAEBqdW1kY2JvcgARABCAAACqADibcRNjMnBhLmhhc2guZGF0YQAAAAAYYzJzaLJ/m+GqNKrrjqva6R6qhnkAAACAY2JvcqVjYWxnZnNoYTI1NmNwYWRMAAAAAAAAAAAAAAAAZGhhc2hYIDCLtnwvd0qx+xMCE15RQf99Gld340eACTikIl5xVfetZG5hbWVuanVtYmYgbWFuaWZlc3RqZXhjbHVzaW9uc4GiZXN0YXJ0GXA5Zmxlbmd0aBkeBAAAAj5qdW1iAAAAJ2p1bWRjMmNsABEAEIAAAKoAOJtxA2MycGEuY2xhaW0udjIAAAACD2Nib3KlY2FsZ2ZzaGEyNTZpc2lnbmF0dXJleE1zZWxmI2p1bWJmPS9jMnBhL3VybjpjMnBhOjA2ZDQ0Yzg3LTEwNjItNDQ0NS04YTE2LTVlZmE5OTU1NjA0Mi9jMnBhLnNpZ25hdHVyZWppbnN0YW5jZUlEeCx4bXA6aWlkOjY2ODhhMTAyLWQ0NDMtNDBmNS04MjYzLWI2OWZiODk5YzE1MXJjcmVhdGVkX2Fzc2VydGlvbnODomN1cmx4LXNlbGYjanVtYmY9YzJwYS5hc3NlcnRpb25zL2MycGEuaW5ncmVkaWVudC52M2RoYXNoWCBWew7KV+Cy5qWhFQ1clkfUcPEn1UlSGnBKAcPnrdVvAqJjdXJseCpzZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmFjdGlvbnMudjJkaGFzaFggtHNeVTABESew/gupqBvvlkGE3b8twy2Y6nDuen8qAEeiY3VybHgpc2VsZiNqdW1iZj1jMnBhLmFzc2VydGlvbnMvYzJwYS5oYXNoLmRhdGFkaGFzaFgg84enxwfvlN4Uw7IPjPt3cys+cSt1rSspXfOIlXiCLJZ0Y2xhaW1fZ2VuZXJhdG9yX2luZm+jZG5hbWVvQW50aHJvcGljIEZpbGVzZ3ZlcnNpb25lMS4wLjBrc3BlY1ZlcnNpb25lMi40LjAAABA4anVtYgAAAChqdW1kYzJjcwARABCAAACqADibcQNjMnBhLnNpZ25hdHVyZQAAABAIY2JvctKEWQISogEmGCFZAgowggIGMIIBjaADAgECAhRA5aAK7sI50L64g/oGQgU9Z1UTADAKBggqhkjOPQQDAzBJMRcwFQYDVQQKEw5BbnRocm9waWMsIFBCQzEuMCwGA1UEAxMlQW50aHJvcGljIENvbnRlbnQgQ3JlZGVudGlhbHMgUm9vdCBDQTAeFw0yNjA4MDcxODQzNTZaFw0yODA4MDYxOTQzNTZaMEQxFzAVBgNVBAoTDkFudGhyb3BpYywgUEJDMSkwJwYDVQQDEyBBbnRocm9waWMgQ2xhdWRlIENvbnRlbnQgU2lnbmluZzBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABJh6CmvLUBgFFNU0vUKlOVtE6djd17L5SuwX0LemFisBM3dkd/3cyjxFA3Qo5S46fX0/ihY0VZ7mfb9KF703t5OjWDBWMA4GA1UdDwEB/wQEAwIHgDAVBgNVHSUEDjAMBgorBgEEAYPoXgIBMAwGA1UdEwEB/wQCMAAwHwYDVR0jBBgwFoAUzlHiBIFOZFsj+OPEz5o+nMHXXMIwCgYIKoZIzj0EAwMDZwAwZAIwMXMdFJ4BetLLVY7ORuE9noqbbAZOZn/aArXyTwFAZfKrPzxF2vPoJNf1+UCdg1XGAjBwX1zd9WGqYkqmL5SFqw1QySjr1zJfpJM9+1rdDwSPLMOPOjKuiXjoU/pUUeG9RwmhY3BhZFkNngAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPZYQIyOrbYxIlj5HPC6Rs+Lcw4XMp+S57pmhLQrgOb5oHvR+DjhJs6VFvp4FOOEwrpL+xr63ANVaM5b0dQ2GGeCxjY=</c2pa:manifest></metadata></svg>

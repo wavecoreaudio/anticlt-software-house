@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Documentação da API · ANTI CLT</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/css/estilo.css">
+</head>
+<body>
+  <header class="topo" id="topo"></header>
+
+  <main class="container" style="padding-bottom:110px">
+    <section class="cabeca-pagina">
+      <span class="rotulo">Para desenvolvedores</span>
+      <h1>Documentação da API</h1>
+      <p class="subtitulo">API REST em Node.js + Express com banco SQLite3. Todas as respostas são JSON. Rotas protegidas recebem o cabeçalho <code class="codigo" style="display:inline;padding:2px 8px">Authorization: Bearer &lt;token&gt;</code>, devolvido pelo login.</p>
+    </section>
+
+    <div class="linha-flex" style="margin-bottom:28px" id="legenda"></div>
+    <div id="rotas"><p class="carregando">Carregando…</p></div>
+
+    <section class="secao--borda" style="margin-top:80px;padding-top:60px">
+      <span class="rotulo">Banco de dados</span>
+      <h2 class="titulo-secao" style="font-size:36px">Modelo entidade-relacionamento</h2>
+      <p class="subtitulo">Gerado a partir do <code>schema.sql</code> pelo script <code>scripts/gerar-diagrama.js</code>.</p>
+      <div class="diagrama"><a href="/img/modelo-er.svg" target="_blank"><img src="/img/modelo-er.svg" alt="Diagrama com as 14 tabelas do banco e suas relações"></a></div>
+    </section>
+  </main>
+
+  <footer class="rodape" id="rodape"></footer>
+  <script src="/js/icones.js"></script>
+  <script src="/js/comum.js"></script>
+  <script>
+    // A lista de rotas vem do próprio servidor (server/docs.js)
+    const ACESSOS = { publico: 'Público', logado: 'Logado', cliente: 'Cliente', prestador: 'Prestador', admin: 'Admin' };
+
+    (async () => {
+      const grupos = await api('/docs');
+      const total = grupos.reduce((s, g) => s + g.rotas.length, 0);
+      document.getElementById('legenda').innerHTML =
+        `<span class="texto-fraco">${total} rotas em ${grupos.length} grupos · acesso:</span>` +
+        Object.values(ACESSOS).map((a) => `<span class="etiqueta">${a}</span>`).join('');
+
+      document.getElementById('rotas').innerHTML = grupos.map((g) => `
+        <h2 style="font-size:20px;font-weight:500;margin:36px 0 14px">${esc(g.grupo)}</h2>
+        ${g.rotas.map((r) => `
+          <details class="rota">
+            <summary>
+              <span class="metodo metodo--${r.metodo}">${r.metodo}</span>
+              <code>${esc(r.caminho)}</code>
+              <span class="etiqueta" style="margin-left:auto">${ACESSOS[r.acesso] || r.acesso}</span>
+            </summary>
+            <div class="rota__corpo">
+              <p style="margin:0">${esc(r.descricao)}</p>
+              ${r.corpo ? `<div style="margin-top:14px"><strong style="color:var(--texto);font-weight:500">Corpo (JSON)</strong><code class="codigo">${esc(JSON.stringify(r.corpo, null, 2))}</code></div>` : ''}
+              ${r.resposta ? `<div style="margin-top:14px"><strong style="color:var(--texto);font-weight:500">Resposta</strong><code class="codigo">${esc(JSON.stringify(r.resposta, null, 2))}</code></div>` : ''}
+            </div>
+          </details>`).join('')}`).join('');
+    })().catch((erro) => {
+      document.getElementById('rotas').innerHTML = `<div class="vazio">${esc(erro.message)}</div>`;
+    });
+  </script>
+</body>
+</html>

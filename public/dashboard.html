@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard · ANTI CLT</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/css/estilo.css">
+</head>
+<body>
+  <header class="topo" id="topo"></header>
+
+  <main class="container painel">
+    <nav class="painel__lateral" id="lateral" aria-label="Seções da dashboard">
+      <button data-secao="geral"><i data-icone="grafico"></i> Visão geral</button>
+      <button data-secao="usuarios"><i data-icone="usuario"></i> Usuários</button>
+      <button data-secao="categorias"><i data-icone="ferramenta"></i> Categorias</button>
+      <button data-secao="auditoria"><i data-icone="lista"></i> Auditoria</button>
+      <button data-secao="conta"><i data-icone="escudo"></i> Conta</button>
+    </nav>
+    <section class="painel__conteudo" id="conteudo"><p class="carregando">Carregando…</p></section>
+  </main>
+
+  <script src="/js/icones.js"></script>
+  <script src="/js/comum.js"></script>
+  <script src="/js/graficos.js"></script>
+  <script src="/js/dashboard.js"></script>
+</body>
+</html>
