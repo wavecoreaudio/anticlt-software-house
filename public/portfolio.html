@@ -41,7 +41,11 @@
             </select></label>
         </div>
       </div>
-      <p class="resultado-info" id="info"></p>
+      <div class="resultado-cabecalho">
+        <p class="resultado-info" id="info" aria-live="polite"></p>
+        <div class="filtros-ativos" id="filtros-ativos" aria-label="Filtros aplicados"></div>
+        <button class="limpar-filtros oculto" id="limpar-filtros" type="button">Limpar filtros</button>
+      </div>
       <div class="grade-posts" id="lista"><p class="carregando">Carregando prestadores…</p></div>
       <div class="carregar-mais"><button class="botao oculto" id="mais">Carregar mais</button></div>
     </section>

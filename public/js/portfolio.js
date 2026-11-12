@@ -21,6 +21,26 @@ const elAbas = document.getElementById('abas');
 const elLista = document.getElementById('lista');
 const elInfo = document.getElementById('info');
 const elMais = document.getElementById('mais');
+const elFiltrosAtivos = document.getElementById('filtros-ativos');
+const elLimparFiltros = document.getElementById('limpar-filtros');
+
+function atualizarUrlCategoria() {
+  history.replaceState(null, '', estado.categoria === 'todos' ? '/portfolio' : `/portfolio?categoria=${encodeURIComponent(estado.categoria)}`);
+}
+
+function desenharFiltrosAtivos() {
+  const nomeCategoria = estado.categorias.find((c) => c.slug === estado.categoria)?.nome;
+  const filtros = [];
+  if (nomeCategoria) filtros.push(['categoria', `Categoria: ${nomeCategoria}`]);
+  if (estado.busca) filtros.push(['busca', `Busca: ${estado.busca}`]);
+  if (estado.bairro) filtros.push(['bairro', `Bairro: ${estado.bairro}`]);
+
+  elFiltrosAtivos.innerHTML = filtros.map(([chave, texto]) => `
+    <button class="chip-filtro" type="button" data-remover-filtro="${chave}" aria-label="Remover filtro ${esc(texto)}">
+      ${esc(texto)} <span aria-hidden="true">×</span>
+    </button>`).join('');
+  elLimparFiltros.classList.toggle('oculto', filtros.length === 0);
+}
 
 function desenharAbas() {
   const total = estado.categorias.reduce((s, c) => s + c.total_prestadores, 0);
@@ -70,6 +90,7 @@ function cartaoPrestador(p) {
 function desenharLista(acrescentar = false) {
   const nomeCategoria = estado.categorias.find((c) => c.slug === estado.categoria)?.nome;
   elInfo.textContent = `${estado.total} prestador${estado.total === 1 ? '' : 'es'}${nomeCategoria ? ` em ${nomeCategoria}` : ''}${estado.bairro ? ` no bairro ${estado.bairro}` : ''}${estado.busca ? ` para "${estado.busca}"` : ''}`;
+  desenharFiltrosAtivos();
   elMais.classList.toggle('oculto', estado.pagina >= estado.paginas);
 
   if (estado.prestadores.length === 0) {
@@ -274,8 +295,40 @@ elAbas.addEventListener('click', (e) => {
   const aba = e.target.closest('.aba');
   if (!aba || aba.dataset.slug === estado.categoria) return;
   estado.categoria = aba.dataset.slug;
-  history.replaceState(null, '', estado.categoria === 'todos' ? '/portfolio' : `/portfolio?categoria=${estado.categoria}`);
+  atualizarUrlCategoria();
   registrarAcesso({ tipo: 'busca', categoria: estado.categoria });
+  desenharAbas();
+  carregarPrestadores();
+});
+
+function removerFiltro(chave) {
+  if (chave === 'categoria') {
+    estado.categoria = 'todos';
+    atualizarUrlCategoria();
+    desenharAbas();
+  } else if (chave === 'busca') {
+    estado.busca = '';
+    document.getElementById('busca').value = '';
+    clearTimeout(atraso);
+  } else if (chave === 'bairro') {
+    estado.bairro = '';
+    document.getElementById('bairro').value = '';
+  }
+  carregarPrestadores();
+}
+
+elFiltrosAtivos.addEventListener('click', (e) => {
+  const botao = e.target.closest('[data-remover-filtro]');
+  if (botao) removerFiltro(botao.dataset.removerFiltro);
+});
+elLimparFiltros.addEventListener('click', () => {
+  estado.categoria = 'todos';
+  estado.busca = '';
+  estado.bairro = '';
+  document.getElementById('busca').value = '';
+  document.getElementById('bairro').value = '';
+  clearTimeout(atraso);
+  atualizarUrlCategoria();
   desenharAbas();
   carregarPrestadores();
 });
