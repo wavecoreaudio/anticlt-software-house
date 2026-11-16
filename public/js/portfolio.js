@@ -2,11 +2,12 @@
 // paginação ("carregar mais"), favoritos, perfil com avaliações e chat.
 
 const POR_PAGINA = 9;
+const ORDENS = ['recentes', 'avaliacao', 'experiencia', 'nome'];
 const estado = {
   categoria: parametro('categoria') || 'todos',
-  busca: '',
-  bairro: '',
-  ordem: 'recentes',
+  busca: (parametro('busca') || '').trim().slice(0, 60),
+  bairro: parametro('bairro') || '',
+  ordem: ORDENS.includes(parametro('ordem')) ? parametro('ordem') : 'recentes',
   pagina: 1,
   paginas: 1,
   total: 0,
@@ -21,6 +22,44 @@ const elAbas = document.getElementById('abas');
 const elLista = document.getElementById('lista');
 const elInfo = document.getElementById('info');
 const elMais = document.getElementById('mais');
+const elFiltrosAtivos = document.getElementById('filtros-ativos');
+const elLimparFiltros = document.getElementById('limpar-filtros');
+const elBusca = document.getElementById('busca');
+const elBairro = document.getElementById('bairro');
+const elOrdem = document.getElementById('ordem');
+
+function atualizarUrlFiltros() {
+  const url = new URL(location.href);
+  const filtros = {
+    categoria: estado.categoria === 'todos' ? '' : estado.categoria,
+    busca: estado.busca,
+    bairro: estado.bairro,
+    ordem: estado.ordem === 'recentes' ? '' : estado.ordem,
+  };
+  Object.entries(filtros).forEach(([chave, valor]) => {
+    if (valor) url.searchParams.set(chave, valor);
+    else url.searchParams.delete(chave);
+  });
+  history.replaceState(null, '', `${url.pathname}${url.search}${url.hash}`);
+}
+
+function desenharFiltrosAtivos() {
+  const nomeCategoria = estado.categorias.find((c) => c.slug === estado.categoria)?.nome;
+  const filtros = [];
+  if (nomeCategoria) filtros.push(['categoria', `Categoria: ${nomeCategoria}`]);
+  if (estado.busca) filtros.push(['busca', `Busca: ${estado.busca}`]);
+  if (estado.bairro) filtros.push(['bairro', `Bairro: ${estado.bairro}`]);
+  if (estado.ordem !== 'recentes') {
+    const nomeOrdem = { avaliacao: 'Mais bem avaliados', experiencia: 'Mais experientes', nome: 'Nome (A–Z)' }[estado.ordem];
+    filtros.push(['ordem', `Ordem: ${nomeOrdem}`]);
+  }
+
+  elFiltrosAtivos.innerHTML = filtros.map(([chave, texto]) => `
+    <button class="chip-filtro" type="button" data-remover-filtro="${chave}" aria-label="Remover filtro ${esc(texto)}">
+      ${esc(texto)} <span aria-hidden="true">×</span>
+    </button>`).join('');
+  elLimparFiltros.classList.toggle('oculto', filtros.length === 0);
+}
 
 function desenharAbas() {
   const total = estado.categorias.reduce((s, c) => s + c.total_prestadores, 0);
@@ -70,6 +109,7 @@ function cartaoPrestador(p) {
 function desenharLista(acrescentar = false) {
   const nomeCategoria = estado.categorias.find((c) => c.slug === estado.categoria)?.nome;
   elInfo.textContent = `${estado.total} prestador${estado.total === 1 ? '' : 'es'}${nomeCategoria ? ` em ${nomeCategoria}` : ''}${estado.bairro ? ` no bairro ${estado.bairro}` : ''}${estado.busca ? ` para "${estado.busca}"` : ''}`;
+  desenharFiltrosAtivos();
   elMais.classList.toggle('oculto', estado.pagina >= estado.paginas);
 
   if (estado.prestadores.length === 0) {
@@ -274,19 +314,70 @@ elAbas.addEventListener('click', (e) => {
   const aba = e.target.closest('.aba');
   if (!aba || aba.dataset.slug === estado.categoria) return;
   estado.categoria = aba.dataset.slug;
-  history.replaceState(null, '', estado.categoria === 'todos' ? '/portfolio' : `/portfolio?categoria=${estado.categoria}`);
+  atualizarUrlFiltros();
   registrarAcesso({ tipo: 'busca', categoria: estado.categoria });
   desenharAbas();
   carregarPrestadores();
 });
 
-let atraso;
-document.getElementById('busca').addEventListener('input', (e) => {
-  clearTimeout(atraso);
-  atraso = setTimeout(() => { estado.busca = e.target.value.trim(); carregarPrestadores(); }, 300);
+function removerFiltro(chave) {
+  if (chave === 'categoria') {
+    estado.categoria = 'todos';
+    desenharAbas();
+  } else if (chave === 'busca') {
+    estado.busca = '';
+    elBusca.value = '';
+    clearTimeout(atraso);
+  } else if (chave === 'bairro') {
+    estado.bairro = '';
+    elBairro.value = '';
+  } else if (chave === 'ordem') {
+    estado.ordem = 'recentes';
+    elOrdem.value = estado.ordem;
+  }
+  atualizarUrlFiltros();
+  carregarPrestadores();
+}
+
+elFiltrosAtivos.addEventListener('click', (e) => {
+  const botao = e.target.closest('[data-remover-filtro]');
+  if (botao) removerFiltro(botao.dataset.removerFiltro);
 });
-document.getElementById('bairro').addEventListener('change', (e) => { estado.bairro = e.target.value; carregarPrestadores(); });
-document.getElementById('ordem').addEventListener('change', (e) => { estado.ordem = e.target.value; carregarPrestadores(); });
+elLimparFiltros.addEventListener('click', () => {
+  estado.categoria = 'todos';
+  estado.busca = '';
+  estado.bairro = '';
+  estado.ordem = 'recentes';
+  elBusca.value = '';
+  elBairro.value = '';
+  elOrdem.value = estado.ordem;
+  clearTimeout(atraso);
+  atualizarUrlFiltros();
+  desenharAbas();
+  carregarPrestadores();
+});
+
+let atraso;
+elBusca.value = estado.busca;
+elOrdem.value = estado.ordem;
+elBusca.addEventListener('input', (e) => {
+  clearTimeout(atraso);
+  atraso = setTimeout(() => {
+    estado.busca = e.target.value.trim();
+    atualizarUrlFiltros();
+    carregarPrestadores();
+  }, 300);
+});
+elBairro.addEventListener('change', (e) => {
+  estado.bairro = e.target.value;
+  atualizarUrlFiltros();
+  carregarPrestadores();
+});
+elOrdem.addEventListener('change', (e) => {
+  estado.ordem = e.target.value;
+  atualizarUrlFiltros();
+  carregarPrestadores();
+});
 elMais.addEventListener('click', () => carregarPrestadores(estado.pagina + 1));
 
 elLista.addEventListener('click', (e) => {
@@ -304,9 +395,12 @@ elLista.addEventListener('click', (e) => {
   try {
     const [categorias, bairros] = await Promise.all([api('/categorias'), api('/prestadores/bairros')]);
     estado.categorias = categorias;
-    document.getElementById('bairro').insertAdjacentHTML('beforeend',
+    elBairro.insertAdjacentHTML('beforeend',
       bairros.map((b) => `<option value="${esc(b.bairro)}">${esc(b.bairro)} (${b.total})</option>`).join(''));
     if (estado.categoria !== 'todos' && !estado.categorias.some((c) => c.slug === estado.categoria)) estado.categoria = 'todos';
+    if (!bairros.some((b) => b.bairro === estado.bairro)) estado.bairro = '';
+    elBairro.value = estado.bairro;
+    atualizarUrlFiltros();
     if (estado.categoria !== 'todos') registrarAcesso({ tipo: 'busca', categoria: estado.categoria });
     desenharAbas();
     document.querySelector('.aba.ativa')?.scrollIntoView({ inline: 'center', block: 'nearest' });

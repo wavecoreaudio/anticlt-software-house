@@ -27,7 +27,7 @@
         <label class="busca">
           <span class="sr-only">Buscar</span>
           <i data-icone="busca"></i>
-          <input class="entrada" type="search" id="busca" placeholder="Buscar por nome, bairro ou serviço">
+          <input class="entrada" type="search" id="busca" maxlength="60" placeholder="Buscar por nome, bairro ou serviço">
         </label>
         <div class="filtros-extra">
           <label><span class="sr-only">Bairro</span>
@@ -41,7 +41,11 @@
             </select></label>
         </div>
       </div>
-      <p class="resultado-info" id="info"></p>
+      <div class="resultado-cabecalho">
+        <p class="resultado-info" id="info" aria-live="polite"></p>
+        <div class="filtros-ativos" id="filtros-ativos" aria-label="Filtros aplicados"></div>
+        <button class="limpar-filtros oculto" id="limpar-filtros" type="button">Limpar filtros</button>
+      </div>
       <div class="grade-posts" id="lista"><p class="carregando">Carregando prestadores…</p></div>
       <div class="carregar-mais"><button class="botao oculto" id="mais">Carregar mais</button></div>
     </section>
